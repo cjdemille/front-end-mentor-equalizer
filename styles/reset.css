@@ -1,0 +1,54 @@
+/* Reset margin, padding, and border to zero for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Set default font properties */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Make images and videos responsive */
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Remove list styles */
+ul, ol {
+    list-style: none;
+}
+
+/* Set anchors to blue and remove text decoration */
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+/* Set headings to a uniform font size */
+h1, h2, h3, h4, h5, h6 {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+/* Remove default table styles */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Set forms to a standard font size */
+input, select, textarea, button {
+    font-size: 16px;
+}
+
+/* Remove default fieldset border */
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}

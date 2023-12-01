@@ -1,0 +1,147 @@
+:root{
+    --blue: #66E2DC; 
+    --orange:#FA7453; 
+    --yellow: #FFB964;
+    --white: #FCFAF9;
+    --black: #191826;
+    --blackA:#191826A0;
+    font-size: 16px;
+}
+
+
+
+main{
+    font-family: 'IBM Plex Sans', sans-serif;
+    color:var(--black);
+    background: url('../assets/bg-main-mobile.png');
+    background-repeat: no-repeat;
+    background-position: -230% -20%;
+    padding:0;
+    margin:0;
+}
+
+body{
+    width:100vw;
+    padding:0;
+}
+
+.white{
+    color:var(--white);
+}
+.bold{
+    font-weight: 700;
+}
+h1{
+    font-size: 5rem;
+    line-height: 5.5rem;
+    letter-spacing: -.1rem;
+    margin: 2.5rem 0 1rem;
+}
+
+h2{
+    font-size:2.5rem;
+    line-height: 3.25rem;
+}
+
+.header{
+    padding:1rem;
+    margin-bottom: 15rem;
+}
+
+.header p{
+    font-size: 1.25rem;
+    line-height: 2.125rem;
+}
+.logo{
+    width:9rem;
+    display:block;
+    margin:0 1rem 1rem;
+    padding:1rem 0;
+}
+
+.premium p{
+    font-size: 1.25rem;
+    line-height: 2.125rem;
+}
+.premium h2{
+    margin-bottom: 1rem;
+}
+
+.premium{
+    background-color: var(--orange);
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    position:relative;
+    top:-3rem;
+    padding:3rem 2rem;
+}
+
+.button{
+    border-radius: 1rem;
+    box-shadow: 0 .1rem .5rem var(--blackA);
+    text-align: center;
+    padding:1.5rem;
+    margin-bottom:1.5rem;
+}
+
+.btn-black{
+    background-color: var(--black);
+    color:var(--white);
+}
+.btn-white{
+    background-color: var(--white);
+    color:var(--black);
+}
+
+.illustration-app{
+    padding:5rem 0;
+    background: var(--black) url('../assets/bg-pattern-2.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 120%;
+    height:20rem;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+.illustration-app img{
+    width:50%;
+    position:relative;
+    bottom:75%;
+    margin: 0 auto;
+    display: block;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+}
+
+.highlight-price{
+    font-size: 5rem;
+    line-height: 5rem;
+    padding:1rem;
+}
+
+footer{
+    padding:1rem;
+}
+footer .logo{
+    margin: 1rem 0;
+}
+
+footer a{
+    text-decoration: none;
+    color:var(--black);
+}
+
+.contact{
+    margin-bottom:2rem;
+}
+
+.social-links{
+    margin:3rem 0;
+}
+   
+#insta{
+    margin:0 1rem;
+}
