@@ -13,9 +13,6 @@
 main{
     font-family: 'IBM Plex Sans', sans-serif;
     color:var(--black);
-    background: url('../assets/bg-main-mobile.png');
-    background-repeat: no-repeat;
-    background-position: -100% -20%;
     padding:0;
     margin:0;
 }
@@ -26,6 +23,9 @@ body{
     flex-direction: column;
     justify-content: center;
     padding:0;
+    background: url('../assets/bg-main-mobile.png') var(--white);
+    background-repeat: no-repeat;
+    background-position: -100% -20%;
 }
 
 .white{
@@ -141,6 +141,14 @@ h2{
 
 footer{
     padding:1rem;
+    display:flex;
+    flex-direction: column;
+
+}
+
+.footer-content{
+    display:flex;
+    flex-direction: column;
 }
 footer .logo{
     margin: 1rem 0;
@@ -167,4 +175,108 @@ footer a{
    
 #insta{
     margin:0 1rem;
+}
+
+.tablet{
+    display:none;
+}
+@media screen and (min-width: 769px){
+    main{
+       
+        padding: 2rem;
+    }
+
+    body{
+        background: url('../assets/bg-main-tablet.png') var(--white);
+        background-position: 50% -20%;
+
+    }
+    .header{
+        padding-left:0;
+    }
+    .logo{
+        margin-left: 0;
+    }
+    .illustration-app{
+        background-size: 60%;
+        position:relative;
+        width:100%;
+        margin:0 auto;
+        padding:10%;
+        box-sizing: border-box;
+        border-radius: 1rem;
+    }
+
+    #illustration{
+        width:40%;
+        left:-23%;
+        top:-20rem;
+        display:block;
+    }
+
+    .premium{
+        width:50%;
+        position:absolute;
+        bottom:-5%;
+        right:5%;
+        border-radius:1rem;
+    }
+
+    footer{
+        clear:both;
+        margin-top:5rem;
+    }
+    .footer-content{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .tablet{
+        display:block;
+        z-index: 100;
+        position: absolute;
+        top:-3rem;
+        right:-2rem;
+        width:15%;
+    }
+}
+
+@media screen and (min-width:1025px) {
+    body{
+        background: url('../assets/bg-main-desktop.png') var(--white);
+        background-position: 50% -20%;
+    }
+    main{
+        max-width: 1200px;
+        margin:0 auto;
+    }
+    #illustration{
+        left:-30%;
+        max-width: 20rem;
+    }
+
+    .premium{
+        width:40%;
+        max-width: 30rem;
+    }
+
+    footer{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer-text{
+        width: 50%;
+    }
+    .footer-content{
+        justify-content: space-between;
+    }
+    .header{
+        width:80%;
+    }
+
+    .tablet{
+        top:-3rem;
+        right:-4rem;
+        width:15%;
+    }
 }
