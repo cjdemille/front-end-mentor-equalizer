@@ -15,13 +15,16 @@ main{
     color:var(--black);
     background: url('../assets/bg-main-mobile.png');
     background-repeat: no-repeat;
-    background-position: -230% -20%;
+    background-position: -100% -20%;
     padding:0;
     margin:0;
 }
 
 body{
     width:100vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
     padding:0;
 }
 
@@ -32,15 +35,16 @@ body{
     font-weight: 700;
 }
 h1{
-    font-size: 5rem;
-    line-height: 5.5rem;
+    font-size: 3em;
+    line-height: 3rem;
     letter-spacing: -.1rem;
     margin: 2.5rem 0 1rem;
+    width:100
 }
 
 h2{
-    font-size:2.5rem;
-    line-height: 3.25rem;
+    font-size:2.5em;
+    line-height: 3.25em;
 }
 
 .header{
@@ -71,11 +75,9 @@ h2{
     background-color: var(--orange);
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
-    position:relative;
-    top:-3rem;
     padding:3rem 2rem;
-}
 
+}
 .button{
     border-radius: 1rem;
     box-shadow: 0 .1rem .5rem var(--blackA);
@@ -87,7 +89,7 @@ h2{
     justify-content: center;
 }
 
-.button img{
+.btn img{
     margin-right:.5rem;
 }
 .button:hover{
@@ -111,21 +113,19 @@ h2{
 }
 
 .illustration-app{
-    padding:5rem 0;
     background: var(--black) url('../assets/bg-pattern-2.svg');
     background-repeat: no-repeat;
-    background-position: 50% 120%;
-    height:20rem;
+    background-position: 50% 20%;
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem;
 }
 
-.illustration-app img{
+#illustration{
     width:50%;
-    position:relative;
-    bottom:75%;
-    margin: 0 auto;
-    display: block;
+    position:relative; 
+    top: -10rem;
+    margin:0 auto;
+    display:block;
 }
 
 .price{
