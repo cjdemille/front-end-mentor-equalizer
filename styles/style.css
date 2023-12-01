@@ -82,15 +82,32 @@ h2{
     text-align: center;
     padding:1.5rem;
     margin-bottom:1.5rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button img{
+    margin-right:.5rem;
+}
+.button:hover{
+    cursor:pointer;
 }
 
 .btn-black{
     background-color: var(--black);
     color:var(--white);
 }
+
+.btn-black:hover{
+    background-color: var(--blue);
+}
 .btn-white{
     background-color: var(--white);
     color:var(--black);
+}
+.btn-white:hover{
+    background-color: var(--yellow);
 }
 
 .illustration-app{
@@ -140,6 +157,12 @@ footer a{
 
 .social-links{
     margin:3rem 0;
+}
+
+
+.social-links img:hover{
+    filter: invert(61%) sepia(61%) saturate(3396%) hue-rotate(328deg) brightness(106%) contrast(96%);
+    cursor: pointer;
 }
    
 #insta{
