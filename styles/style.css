@@ -286,7 +286,8 @@ footer a {
     }
 
     .footer-logo {
-        min-width: 12rem;
+        width: 147px;
+        height: 33px;
     }
 
     .footer-text {
